@@ -439,9 +439,7 @@ Timepicker.Clock = React.createClass({
                 hours: hours,
 
                 even: !self.state.even,
-                mode: preventChangeMode
-                    ? self.state.mode === Timepicker.HOURS ? Timepicker.HOURS : Timepicker.MINUTES
-                    : self.state.mode === Timepicker.HOURS ? Timepicker.MINUTES : Timepicker.HOURS
+                mode: Timepicker.MINUTES
             }, function () {
                 self.onChange();
             });
